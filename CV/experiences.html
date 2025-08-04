@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences-Shaharia Mahmud</title>
+    <!-- line for the favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .experiences-container{
+            max-width: 1200px;
+            padding: 0 1rem;
+        }
+        main .experiences-container {
+            margin-top: 4rem;
+            margin-right: 6rem;
+        }
+        .introduction {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: #6b7280;
+        }
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+        .experience-item h3 {
+            font-size: 1rem;
+            color: #1f2937;
+            margin-bottom: 0.75rem;
+        }
+        .experience-item ul {
+            list-style-type: disc; /* Ensures round bullet points */
+            list-style-position: inside;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Shaharia Mahmud</h1>
+                <nav>
+                    <ul>
+                        <li><a href="portfolio.html" class="nav-link">Home</a></li>
+                        <li><a href="Projects.html" class="nav-link">Projects</a></li>
+                        <li><a href="experiences.html" class="nav-link active">Experiences</a></li>
+                        <li><a href="cv.html" class="nav-link">CV</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn">
+                    <span>☰</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <div class="experiences-container">
+                <p class="introduction">
+                    I am passionate about data driven political science studies, specifically in governance, comparative politics and public policy. As a master trainer of SAVE Youth Bangladesh, I work to ensure that all the students in the training get a basic grasp of democracy, human rights, peace, tolerance and diversity.
+                </p>
+                <div class="experience-item">
+                    <h3>Research Assistant (2021-present)</h3>
+                    <ul>
+                        <li>Collecting and Analyzing political violence data of the whole Bangladesh monthly.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Master Trainer (2024-present)</h3>
+                    <ul>
+                        <li>Trained more nearly 500 students about democracy, human rights, peace, tolerance and diversity in different educational institutions.</li>
+                    </ul>
+                </div>
+        </div>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-name">
+                    <span>Shaharia Mahmud</span>
+                </div>
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <!-- Email icon -->
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shaharia.mgrdu@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- LinkedIn icon -->
+                    <a href="https://www.linkedin.com/in/shaharia-mahmud-a04a791b2/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
