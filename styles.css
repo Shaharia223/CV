@@ -1,0 +1,267 @@
+    /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f8f8f8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333333;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Navigation Styles */
+        nav {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 1rem 0;
+            display: none;
+            z-index: 10;
+        }
+        nav.active {
+            display: block;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            padding-bottom: 0.25rem;
+            transition: all 0.3s ease-in-out;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-link:hover {
+            color: white;
+            border-bottom-color: white;
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: block;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-menu-btn:hover {
+            color: #d1d5db;
+        }
+
+        /* Main Content */
+        main {
+            flex-grow: 1;
+            padding: 2rem 0;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        /* Text Content */
+        .text-content {
+            color: #374151;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .text-content h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .text-content p {
+            margin-bottom: 1rem;
+        }
+
+        /* Photo Section */
+        .photo-section {
+            display: flex;
+            justify-content: center;
+        }
+
+        .photo-wrapper {
+            width: 300px;
+            height: 400px;
+            border-radius: 35%;
+            background-color: #f5f5f5;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #6b7280;
+            position: relative;
+        }
+
+        .footer-name {
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-icons a {
+            color: #6b7280;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .container {
+                padding: 0 2rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            nav {
+                display: block;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: auto;
+                background-color: transparent;
+                padding: 0;
+                top: auto;
+                z-index: auto;
+            }
+
+            nav ul {
+                flex-direction: row;
+            }
+
+            .mobile-menu-btn {
+                display: none;
+            }
+
+            main {
+                padding: 3rem 0;
+            }
+
+            .main-content {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 2rem;
+            }
+
+            .text-content {
+                flex: 2;
+                margin-bottom: 0;
+            }
+
+            .text-content h2 {
+                font-size: 3rem;
+            }
+
+            .photo-section {
+                flex: 1;
+            }
+
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .footer-name {
+                margin-bottom: 0;
+            }
+
+            .social-icons {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Custom hover effects and transitions */
+        .nav-link,
+        .social-icons a,
+        .mobile-menu-btn {
+            transition: all 0.3s ease-in-out;
+        }
+        .social-icons a:focus,
+        .mobile-menu-btn:focus {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+        }
